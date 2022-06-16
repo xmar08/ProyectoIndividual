@@ -1,0 +1,20 @@
+uuid: 41dce169-2168-429d-9ed3-1ddf99d91e0f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - creative_innovative
+id: tabs
+theme: creative_innovative
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

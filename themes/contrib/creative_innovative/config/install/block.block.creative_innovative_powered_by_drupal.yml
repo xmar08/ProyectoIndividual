@@ -1,0 +1,22 @@
+uuid: f2b253d0-569d-47bc-b666-bfe0abee2be1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creative_innovative
+_core:
+  default_config_hash: FKl-59rBEcjksIPACxNf7Zu-SUSizWHiVrjEICWoZ50
+id: creative_innovative_powered_by_drupal
+theme: creative_innovative
+region: footer_second
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

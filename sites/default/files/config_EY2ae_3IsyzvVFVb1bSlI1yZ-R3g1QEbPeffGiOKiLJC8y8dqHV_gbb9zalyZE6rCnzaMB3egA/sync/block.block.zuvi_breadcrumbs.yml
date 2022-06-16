@@ -1,0 +1,30 @@
+uuid: 049ee146-788e-46c4-81e9-c804886b5df3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - zuvi
+_core:
+  default_config_hash: Ql-5SP0-nMyJ5UbCGDxKZNHLjEB2yXBCw7it8LnXP_c
+id: zuvi_breadcrumbs
+theme: zuvi
+region: page_header
+weight: -17
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      home: home

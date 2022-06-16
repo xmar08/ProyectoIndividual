@@ -1,0 +1,26 @@
+uuid: 4c05f72d-cbff-448d-a70d-14087a1ac532
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creative_innovative
+_core:
+  default_config_hash: yMrLY_rFzpFAbo86JrhDWky9JWVnC64sXRZX_iB7ZAA
+id: creative_innovative_breadcrumbs
+theme: creative_innovative
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/user/login\r\n/user/register\r\n/user/password"

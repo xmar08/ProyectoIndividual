@@ -1,0 +1,27 @@
+uuid: efb96b2b-5d5b-4e27-a364-ea0658231e8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - creative_innovative
+_core:
+  default_config_hash: KYWdH_MfRExUzZGjpCJFYdxL_JSM1FoLGWTwGwiVPpw
+id: creative_innovative_account_menu
+theme: creative_innovative
+region: footer_third
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

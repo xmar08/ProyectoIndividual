@@ -1,0 +1,14 @@
+global-styles:
+  version: 1.0.0
+  css:
+    theme:
+      css/style.css: {}
+      css/layout.css: {}
+      css/components/block.css: {}
+      css/components/breadcrumb.css: {}
+      css/components/comments.css: {}
+      css/components/header.css: {}
+      css/components/main-content.css: {}
+      css/components/node.css: {}
+      css/components/sidebar.css: {}
+      css/components/tabs.css: {}

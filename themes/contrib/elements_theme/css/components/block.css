@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Visual styles for Element theme's blocks.
+ */
+
+.main-content .block,
+.sidebar .block,
+.region-breadcrumb .block {
+  background:url(../../images/content.png) repeat;
+  margin:0px 0px 12px 0px;
+  padding:10px;
+}
+
+
+.block ul li {
+  list-style:none;
+  margin:0;
+}
+
+.sidepost {
+border-top:1px solid #1B140E;
+padding:6px 0 0 0;
+}
+
+.sideblog {
+margin-bottom:10px;
+}
+
+.sidetitle {
+font-size:14px;
+margin-bottom:2px;
+}

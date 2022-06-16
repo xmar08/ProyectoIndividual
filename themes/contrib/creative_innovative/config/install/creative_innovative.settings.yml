@@ -1,0 +1,62 @@
+_core:
+  default_config_hash: rFGRxxde2EZeeey4Vc4LsREc-LfQKF9v91EhBUiM9Tg
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://vendor-8.jpg'
+  use_default: true
+b5_top_container: container
+b5_top_container_config: ''
+b5_body_schema: none
+b5_body_bg_schema: none
+arrow_up: right
+b5_navbar_schema: dark
+b5_navbar_bg_schema: none
+b5_footer_schema: dark
+b5_footer_bg_schema: dark
+footer_copyright: '© All Rights Reserved.'
+subtheme_folder: themes/custom
+subtheme_name: 'B5 subtheme'
+subtheme_machine_name: b5subtheme
+no_of_slide: '5'
+slideshow_display: 1
+slide1_head: 'Bootstrap, Slider, Color'
+slide1_desc: 'Creative & Innovative Slider Design'
+slide1_url: 'https://www.drupal.org/smashing-infolabs-pvt-ltd'
+slide1_text: 'Contact us'
+slide1_image: {  }
+slide2_head: 'Bootstrap, Slider, Color'
+slide2_desc: 'Creative & Innovative Slider Design'
+slide2_url: 'https://www.drupal.org/smashing-infolabs-pvt-ltd'
+slide2_text: 'Contact us'
+slide2_image: {  }
+slide3_head: 'Bootstrap, Slider, Color'
+slide3_desc: 'Creative & Innovative Slider Design'
+slide3_url: 'https://www.drupal.org/smashing-infolabs-pvt-ltd'
+slide3_text: 'Contact us'
+slide3_image: {  }
+slide4_head: 'Bootstrap, Slider, Color'
+slide4_desc: 'Creative & Innovative Slider Design'
+slide4_url: 'https://www.drupal.org/smashing-infolabs-pvt-ltd'
+slide4_text: 'Contact us'
+slide4_image: {  }
+slide5_head: 'Bootstrap, Slider, Color'
+slide5_desc: 'Creative & Innovative Slider Design'
+slide5_url: 'https://www.drupal.org/smashing-infolabs-pvt-ltd'
+slide5_text: 'Contact us'
+slide5_image: {  }
+show_social_icon: 1
+facebook_url: 'https://www.facebook.com/'
+twitter_url: 'https://twitter.com/'
+linkedin_url: 'https://www.linkedin.com/'
+instagram_url: 'https://www.instagram.com/'
+youtube_url: 'https://www.youtube.com/'
+show_information_icon: 1
+address: '123 Street, New York, USA'
+contact: '+012 345 6789'
+mail_id: info@example.com

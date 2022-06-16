@@ -1,0 +1,10 @@
+uuid: e056dadb-6200-4a07-aa47-688c0bc7ee73
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: Contact
+description: /contacto
+locked: true

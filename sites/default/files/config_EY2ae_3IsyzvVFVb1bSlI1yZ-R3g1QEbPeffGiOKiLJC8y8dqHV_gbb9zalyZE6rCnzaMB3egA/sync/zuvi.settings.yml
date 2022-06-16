@@ -1,0 +1,41 @@
+_core:
+  default_config_hash: _0b2Dyb993JzkbRlFnYz7hMynhBxgPtAERPG2BDTudI
+favicon:
+  path: ''
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: false
+  node_user_picture: true
+logo:
+  path: ''
+  use_default: false
+all_icons_show: 1
+facebook_url: 'https://www.facebook.com/xinia.aguilar.7'
+twitter_url: ''
+instagram_url: ''
+linkedin_url: linkedin.com/in/xinia-aguilar
+youtube_url: ''
+vimeo_url: ''
+telegram_url: ''
+whatsapp_url: 8805-0183
+github_url: ''
+vk_url: ''
+circle_type: circle_border
+slider_show: 1
+slider_code: "<H1 margin-left 30em>PORTAFOLIO</H1>\r\n<H2>XINIA AGUILAR RODRIGUEZ</H2>\r\n<H3>INFORMATICA Y TECNOLOGIA MULTIMEDIA</H3>\r\n<H3>UNIVERSIDAD DE COSTA RICA</H3>"
+slider_image:
+  - '4'
+slider_image_path: ''
+front_sidebar: 1
+comment_user_pic: 1
+node_author_pic: 0
+node_tags: 0
+font_icon_fontawesome: 0
+font_icon_material: 0
+copyright_text: 1
+scrolltotop_on: 1
+styling: 0
+styling_code: ''
+font_icon_fontawesome5: 0

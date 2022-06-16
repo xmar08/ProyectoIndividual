@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Visual styles for comments in Bartik.
+ */
+
+#comment {
+width:450px;
+font:12px arial,helvetica,verdana,sans-serif;
+}
+
+h2.commh2 {
+font-size: 1.4em !important;
+padding: 0 0 5px;
+color:#333 !important;
+}
+
+ol.commentlist {
+margin: 10px 0 20px;
+padding: 0;
+list-style: none;
+font-size: 12px;
+line-height: 20px;
+}
+
+ol.commentlist p {
+margin-bottom:10px;
+line-height: 20px;
+}
+
+ol.commentlist cite {
+font-style: normal;
+font-weight: bold;
+}
+
+ol.commentlist li {
+padding: 20px 10px 10px 10px;
+}
+
+ol.commentlist li.alt {
+padding: 10px 10px 5px 10px !important;
+background: url(../images/white-trans.png) repeat;
+}

@@ -1,0 +1,16 @@
+name = Elements theme
+description = Minimalistic two-column theme.
+screenshot = images/screenshot.png
+core = 6.x
+engine = phptemplate
+features[] = name
+features[] = slogan
+features[] = favicon
+features[] = primary_links
+stylesheets[all][] = style.css
+regions[left] = Left sidebar
+regions[footer] = Footer
+; Information added by Drupal.org packaging script on 2021-10-16
+version = "2.0.0-alpha2"
+project = "elements_theme"
+datestamp = "1634425701"

@@ -1,0 +1,23 @@
+uuid: 44b09bc5-efa9-4d45-ad87-eb47c8c99625
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - creative_innovative
+_core:
+  default_config_hash: BsroOWZIaFc2nFWlDz28EcjPXSQEHUTRv6Usqo7VAIA
+id: creative_innovative_search_form
+theme: creative_innovative
+region: footer_first
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

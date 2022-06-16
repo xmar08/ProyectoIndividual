@@ -1,0 +1,254 @@
+<?php
+
+/**
+ * @file
+ * @file
+ * @file
+ * .*/
+
+use Drupal\file\Entity\File;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * @file
+ * Seo Master theme file.
+ */
+
+/**
+ *
+ */
+function creative_innovative_form_system_theme_settings_alter(&$form, FormStateInterface $form_state, $form_id = NULL) {
+  if ($form['#attributes']['class'][0] == 'system-theme-settings') {
+    $form['#attached']['library'][] = 'creative_innovative/theme.setting';
+    $options_theme = [
+      'left' => 'Left Side',
+      'right' => 'Right Side',
+    ];
+    $option_file = [
+      '1' => '1',
+      '2' => '2',
+      '3' => '3',
+      '4' => '4',
+      '5' => '5',
+    ];
+    $form['footer_details']['footer_copyright'] = [
+      '#type' => 'textarea',
+      '#title' => t('Footer Copyright:'),
+      '#default_value' => theme_get_setting('footer_copyright'),
+      '#description' => t("Text area for Footer Copyright."),
+    ];
+    $form['body_details']['arrow_up'] = [
+      '#type' => 'select',
+      '#title' => t('Arrow Up Left/Right:'),
+      '#default_value' => theme_get_setting('arrow_up'),
+      '#description' => t("Choose Arrow Up Icon Position"),
+      '#options' => $options_theme,
+    ];
+
+    $form['banner']['slideshow'] = [
+      '#type' => 'fieldset',
+      '#title' => t('Front Page Slideshow'),
+      '#collapsible' => TRUE,
+      '#collapsed' => FALSE,
+    ];
+
+    $form['banner']['slideshow']['no_of_slide'] = [
+      '#type' => 'select',
+      '#title' => t('NO Of Slide:'),
+      '#default_value' => theme_get_setting('no_of_slide'),
+      '#description' => t("Choose 1 For Banner Or 2-5 For Slider"),
+      '#options' => $option_file,
+      '#attributes' => [
+        'id' => 'no_of_slide',
+      ],
+    ];
+
+    $form['banner']['slideshow']['slideshow_display'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Show slideshow'),
+      '#default_value' => theme_get_setting('slideshow_display', 'creative_innovative'),
+      '#description'   => t("Check this option to show Slideshow in front page. Uncheck to hide."),
+    ];
+    $form['banner']['slideshow']['slide'] = [
+      '#markup' => t('You can change the description and URL of each slide in the following Slide Setting fieldsets.'),
+    ];
+    for ($i = 1; $i <= 5; $i++) {
+      $form['banner']['slideshow']['slide' . $i] = [
+        '#type' => 'fieldset',
+        '#title' => t('Slide ' . $i),
+        '#attributes' => [
+          'id' => 'slide' . $i,
+          'class' => 'slide-show',
+        ],
+      ];
+      $form['banner']['slideshow']['slide' . $i]['slide' . $i . '_head'] = [
+        '#type' => 'textfield',
+        '#title' => t('Slide Headline'),
+        '#default_value' => theme_get_setting('slide' . $i . '_head', 'creative_innovative'),
+      ];
+      $form['banner']['slideshow']['slide' . $i]['slide' . $i . '_desc'] = [
+        '#type' => 'textarea',
+        '#title' => t('Slide Description'),
+        '#default_value' => theme_get_setting('slide' . $i . '_desc', 'creative_innovative'),
+      ];
+      $form['banner']['slideshow']['slide' . $i]['slide' . $i . '_url'] = [
+        '#type' => 'textfield',
+        '#title' => t('Slide URL'),
+        '#default_value' => theme_get_setting('slide' . $i . '_url', 'creative_innovative'),
+      ];
+      $form['banner']['slideshow']['slide' . $i]['slide' . $i . '_text'] = [
+        '#type' => 'textfield',
+        '#title' => t('Slide URL Text'),
+        '#default_value' => theme_get_setting('slide' . $i . '_text', 'creative_innovative'),
+      ];
+      $form['banner']['slideshow']['slide' . $i]['slide' . $i . '_image'] = [
+        '#type' => 'managed_file',
+        '#title' => t('Image ' . $i),
+        '#default_value' => theme_get_setting('slide' . $i . '_image', 'creative_innovative'),
+        '#upload_location' => 'public://',
+      ];
+    }
+    $form['banner']['slideshow']['slideimage'] = [
+      '#markup' => t('To change the default Slide Images, Replace the slide-image-1.jpg, slide-image-2.jpg and slide-image-3.jpg in the images folder of the theme folder.'),
+    ];
+
+    $form['show_social_icon']['social_icon'] = [
+      '#type' => 'details',
+      '#title' => t('Social Media Link'),
+      '#collapsible' => TRUE,
+      '#collapsed' => FALSE,
+    ];
+    $form['show_social_icon']['social_icon']['show_social_icon'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Show Social Icons'),
+      '#default_value' => theme_get_setting('show_social_icon'),
+      '#description'   => t("Show/Hide social media links"),
+    ];
+    $form['show_social_icon']['social_icon']['facebook_url'] = [
+      '#type' => 'textfield',
+      '#title' => t('Facebook Link'),
+      '#default_value' => theme_get_setting('facebook_url'),
+    ];
+    $form['show_social_icon']['social_icon']['twitter_url'] = [
+      '#type' => 'textfield',
+      '#title' => t('Twitter Link'),
+      '#default_value' => theme_get_setting('twitter_url'),
+    ];
+    $form['show_social_icon']['social_icon']['linkedin_url'] = [
+      '#type' => 'textfield',
+      '#title' => t('Linkedin Link'),
+      '#default_value' => theme_get_setting('linkedin_url'),
+    ];
+    $form['show_social_icon']['social_icon']['instagram_url'] = [
+      '#type' => 'textfield',
+      '#title' => t('Instagram Link'),
+      '#default_value' => theme_get_setting('instagram_url'),
+    ];
+    $form['show_social_icon']['social_icon']['youtube_url'] = [
+      '#type' => 'textfield',
+      '#title' => t('Youtube Link'),
+      '#default_value' => theme_get_setting('youtube_url'),
+    ];
+
+    $form['show_information']['information'] = [
+      '#type' => 'details',
+      '#title' => t('Site Information'),
+      '#collapsible' => TRUE,
+      '#collapsed' => FALSE,
+    ];
+    $form['show_information']['information']['show_information_icon'] = [
+      '#type' => 'checkbox',
+      '#title' => t('Show Information Icons'),
+      '#default_value' => theme_get_setting('show_information_icon'),
+      '#description'   => t("Show/Hide Show Information Icons"),
+    ];
+    $form['show_information']['information']['address'] = [
+      '#type' => 'textfield',
+      '#title' => t('Address'),
+      '#default_value' => theme_get_setting('address'),
+    ];
+    $form['show_information']['information']['contact'] = [
+      '#type' => 'textfield',
+      '#title' => t('contact'),
+      '#default_value' => theme_get_setting('contact'),
+    ];
+    $form['show_information']['information']['mail_id'] = [
+      '#type' => 'textfield',
+      '#title' => t('E-Mail Id'),
+      '#default_value' => theme_get_setting('mail_id'),
+    ];
+
+    $form['#submit'][] = 'creative_innovative_settings_form_submit';
+    $theme = \Drupal::theme()->getActiveTheme()->getName();
+    $theme_file = drupal_get_path('theme', $theme) . '/creative_innovative.theme';
+    $build_info = $form_state->getBuildInfo();
+    if (!in_array($theme_file, $build_info['files'])) {
+      $build_info['files'][] = $theme_file;
+    }
+    $form_state->setBuildInfo($build_info);
+  }
+}
+
+/**
+ * Implements theme_preprocess_page().
+ */
+function creative_innovative_preprocess_page(&$variables) {
+  $variables['footer_copyright'] = theme_get_setting('footer_copyright');
+  $variables['arrow_up'] = theme_get_setting('arrow_up');
+  $variables['banner_image'] = theme_get_setting('banner_image');
+  $variables['show_information_icon'] = theme_get_setting('show_information_icon');
+  $variables['address'] = theme_get_setting('address');
+  $variables['contact'] = theme_get_setting('contact');
+  $variables['mail_id'] = theme_get_setting('mail_id');
+
+  $variables['slideshow_display'] = theme_get_setting('slideshow_display');
+  $no_of_slide = theme_get_setting('no_of_slide');
+  $slider = [];
+  for ($i = 1; $i <= $no_of_slide; $i++) {
+    $fid = theme_get_setting('slide' . $i . '_image');
+    if (!empty($fid)) {
+      $file = File::load($fid[0]);
+      $uri = $file->getFileUri();
+      $image_path = file_create_url($uri);
+    }
+    else {
+      $image_path = drupal_get_path('theme', 'creative_innovative') . '/lib/images/slide' . $i . '.jpg';
+    }
+    $slider[$i] = [
+      'slide_head' => theme_get_setting('slide' . $i . '_head'),
+      'slide_desc' => theme_get_setting('slide' . $i . '_desc'),
+      'slide_url' => theme_get_setting('slide' . $i . '_url'),
+      'slide_url_text' => theme_get_setting('slide' . $i . '_text', 'creative_innovative'),
+      'image' => $image_path,
+    ];
+  }
+  $variables['slide'] = $slider;
+
+  $variables['show_social_icon'] = theme_get_setting('show_social_icon');
+  $variables['facebook_url'] = theme_get_setting('facebook_url');
+  $variables['twitter_url'] = theme_get_setting('twitter_url');
+  $variables['linkedin_url'] = theme_get_setting('linkedin_url');
+  $variables['instagram_url'] = theme_get_setting('instagram_url');
+  $variables['youtube_url'] = theme_get_setting('youtube_url');
+}
+
+/**
+ *
+ */
+function creative_innovative_settings_form_submit(&$form, FormStateInterface $form_state) {
+  $account = \Drupal::currentUser();
+  $values = $form_state->getValues();
+  $slide_no = $values['no_of_slide'];
+  for ($i = 1; $i <= $slide_no; $i++) {
+    if (isset($values["slide{$i}_image"]) && !empty($values["slide{$i}_image"])) {
+      // Load the file via file.fid.
+      if ($file = File::load($values["slide{$i}_image"][0])) {
+        // Change status to permanent.
+        $file->setPermanent();
+        $file->save();
+        $file_usage = \Drupal::service('file.usage');
+        $file_usage->add($file, 'user', 'user', $account->id());
+      }
+    }
+  }
+}

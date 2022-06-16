@@ -1,0 +1,14 @@
+uuid: bf75447f-a8cf-4724-9f12-a4e9a7d54de7
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Comentarios sobre el sitio web'
+recipients:
+  - xmar08@gmail.com
+reply: ''
+weight: 0
+message: 'Su mensaje ha sido enviado.'
+redirect: ''

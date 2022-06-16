@@ -1,0 +1,33 @@
+uuid: 4a1b546e-b89f-4a60-b31e-7240534da49a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - zuvi
+_core:
+  default_config_hash: 9kvJX0G5hL0Bs5UcV3D-6hXTd66lP7mu10wAIqlgmVM
+id: zuvi_branding
+theme: zuvi
+region: site_branding
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Xinia Aguilar Rodriguez'
+  label_display: visible
+  provider: system
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: true
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_editor: content_editor

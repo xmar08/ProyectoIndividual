@@ -1,0 +1,32 @@
+uuid: 3eaa821d-a1b7-420b-92d9-114d233c79fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - zuvi
+id: pagetitle
+theme: zuvi
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Contact
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

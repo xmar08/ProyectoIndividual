@@ -1,0 +1,25 @@
+uuid: d6e45354-2706-4fea-b2bf-0018d46bc7ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creative_innovative
+_core:
+  default_config_hash: vs5CTM1QRa-tgbkZQ55Hh7VjpBv8ecmdQ4RWMw1xVEI
+id: creative_innovative_branding
+theme: creative_innovative
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

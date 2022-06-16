@@ -1,0 +1,27 @@
+uuid: d0ed85d8-6b8c-409f-bdd7-fd261f5fd6bc
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - zuvi
+_core:
+  default_config_hash: 0baA5-sSRL-BlPzVSPsuKgmJxTOQNeuK-7W2EzJNbeQ
+id: zuvi_page_title
+theme: zuvi
+region: content
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

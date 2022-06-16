@@ -1,0 +1,22 @@
+uuid: 99b56104-6181-40e3-9ecb-146d65b23e90
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creative_innovative
+_core:
+  default_config_hash: Sb8s_zRKVUq5yJijMuqfau9ilhTc58XTaAfd1IHoiXE
+id: creative_innovative_messages
+theme: creative_innovative
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

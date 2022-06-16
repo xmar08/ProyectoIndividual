@@ -1,0 +1,25 @@
+uuid: a225e9af-e566-4501-b2c0-af6a92ba5aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - creative_innovative
+id: mainnavigation
+theme: creative_innovative
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

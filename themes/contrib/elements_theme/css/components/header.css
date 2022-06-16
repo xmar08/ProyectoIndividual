@@ -1,0 +1,91 @@
+/* ------------------ Header ------------------ */
+.header {
+  padding: 0;
+  margin: 20px 0 30px;
+}
+@media all and (min-width: 851px) {
+  .header .section {
+    display: flex;
+  }
+}
+.region-header {
+  flex: 1;
+  padding: 0 15px;
+}
+.header__name a {
+  background: linear-gradient(to bottom, #FFF 10%, #666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 4px #000);
+  font-size: 40px;
+}
+.header__name a::after {
+  content: " ";
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  z-index: -10;
+  bottom: 0px;
+  left: 5%;
+  width: 90%;
+  height: 50px;
+  border-radius: 125px / 12px;
+  background: #000;
+  opacity: 30%;
+  filter: blur(5px);
+}
+.block-system-branding-block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__logo {
+  margin-left: 16px;
+}
+.header__nav {
+  color: #BDAFA8;
+  margin: 12px 0 0;
+  height: 65px;
+  position: relative;
+}
+.header__nav .menu {
+  display: flex;
+  margin: 0;
+}
+.header__nav .menu::before,
+.header__nav .menu::after {
+  width: 25px;
+  height: 66px;
+  content: " ";
+  display: block;
+}
+.header__nav .menu::before {
+  background: url(../../images/nav-left.png) top left no-repeat;
+}
+.header__nav .menu::after {
+  background: url(../../images/nav-right.png) top right no-repeat;
+  right: 0;
+  top: 0;
+}
+.header__nav .menu-item {
+  min-width: 115px;
+  display: block;
+  margin-left: 12px;
+  padding-top: 12px;
+  border-right: 1px solid #3B352C;
+  cursor: pointer;
+}
+.header__nav .menu-item:first-child {
+  margin-left: 22px;
+}
+.header__nav .menu-item:last-child {
+  border-right: 0;
+}
+.header__nav .menu-item a {
+  display: block;
+}
+.header__nav .menu-item a:hover h3,
+.header__nav .menu-item a:focus h3 {
+  color: #BDAFA8;
+}

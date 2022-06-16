@@ -1,0 +1,14 @@
+name: Elements theme
+type: theme
+base theme: classy
+description: 'Minimalistic two-column theme.'
+core_version_requirement: ^8 || ^9
+logo: logo.png
+
+libraries:
+  - elements_theme/global-styles
+
+# Information added by Drupal.org packaging script on 2021-10-16
+version: '2.0.0-alpha2'
+project: 'elements_theme'
+datestamp: 1634425701

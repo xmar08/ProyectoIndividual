@@ -1,0 +1,27 @@
+uuid: 11bece4f-8dad-4a9e-8728-8d54b909f8b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - creative_innovative
+_core:
+  default_config_hash: f6GA1jWmJZXkgmE5DsUQhdWjVONCmBKHOpABp3P59Qo
+id: creative_innovative_main_navigation
+theme: creative_innovative
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }
